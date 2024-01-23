@@ -11,3 +11,8 @@ print('Hola' + ' ' + 'Mi nombre es Jason')
 
 # Funcion para entrada de texto
 print('Hola ' + input("Cual es tu nombre: ") + "!")
+
+# Variables
+nombre = input("Escribe tu nombre: ")
+longitud_nombre = str(len(nombre))
+print('El nombre ' + nombre + ' tiene una logitud de ' + longitud_nombre + ' caracteres')
