@@ -13,7 +13,8 @@ percentage_tip = int(input('What percentagwe tip would you lie to give? 10, 12 o
 people_split = int(input('How many people to split the bill? '))
 
 total_tip = total_bill * (percentage_tip / 100)
-total_pay = total_tip + total_bill
-total_pay_people = round(total_pay / people_split, 2)
+total_pay_bill_tip = total_tip + total_bill
+# bill_per_person = round(total_pay_bill_tip / people_split, 2)
+bill_per_person = '{:.2f}'.format(total_pay_bill_tip / people_split, 2)
 
-print(f'Each person should pay: ${total_pay_people}')
+print(f'Each person should pay: ${bill_per_person}')
